@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/animate.css">
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -22,11 +23,10 @@
                         <li><a href="/index.html"   class="header__link">Главная</a></li>
                         <li><a href="javascript://0"  onclick="slowScroll('#services')" class="header__link">Калькулятор ЕОСАГО</a></li>
                         <li><a href="javascript://0"  onclick="slowScroll('#about')" class="header__link">Коэффициенты ОСАГО</a></li>
-                        <li><a href="javascript://0"  onclick="slowScroll('#rewiews')"   class="header__link">Контакты</a></li>
                         
                     </ul>
                 </nav>
-                <a class="header__link">8(982)940-51-91</a>
+                <a href="tel:8(982)940-51-91" class="header__link">8(982)940-51-91</a>
                 <div class="header__burger">
                     <span></span>
                 </div>   
@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <section class="section first-section">
+    <section class="section first-section ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
@@ -46,7 +46,7 @@
                         <div class="first-section-img_block">
                             <img src="./img/first-block/car.svg" alt="" class="first-section-img">
                         </div>
-                        <a class="button-block">
+                        <a href="javascript://0" onclick="slowScroll('#services')" class="button-block">
                             <button class="button first-section-button">Рассчитать</button>
                         </a>
                 </div>
@@ -81,7 +81,7 @@
         </div>
     </section>
 
-    <section class="section calculator">
+    <section class="section calculator" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -145,7 +145,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="whyworks-button-block">
-                        <button class="button">Рассчитать</button>
+                        <a href="javascript://0" onclick="slowScroll('#services')" class="button">Рассчитать</a>
                     </div>
                 </div>
             </div>
@@ -187,9 +187,115 @@
             </div>
         </div>
     </section>
+
+    <section class="section companys">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="section-title whyworks-title">Страховые компании</h4>
+                </div>
+            </div>
+        </div>
+        <div class="companys-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-6"><img src="./img/company/first.png" alt="" class="companys-img"></div>
+                    <div class="col-lg-3 col-md-3 col-6"><img src="./img/company/twice.png" alt="" class="companys-img"></div>
+                    <div class="col-lg-3 col-md-3 col-6" ><img src="./img/company/three.png" alt="" class="companys-img"></div>
+                    <div class="col-lg-3 col-md-3 col-6"><img src="./img/company/four.png" alt="" class="companys-img"></div>
+                    <div class="col-lg-3 col-md-3 col-6"><img src="./img/company/five.png" alt="" class="companys-img"></div>
+                    <div class="col-lg-3 col-md-3 col-6"><img src="./img/company/six.png" alt="" class="companys-img"></div>
+                    <div class="col-lg-3 col-md-3 col-6"><img src="./img/company/seven.png" alt="" class="companys-img"></div>
+                    <div class="col-lg-3 col-md-3 col-6"><img src="./img/company/eith.png" alt="" class="companys-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="companys-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-6 wow slideInLeft" data-wow-duration="0.3s"><img src="./img/company/nine.png" alt="" class="companys-img"></div>
+                    <div class="col-lg-3 col-md-3 col-6 wow slideInLeft" data-wow-duration="0.5s"><img src="./img/company/ten.png" alt="" class="companys-img"></div>
+                    <div class="col-lg-3 col-md-3 col-6 wow slideInRight" data-wow-duration="0.3s"><img src="./img/company/eleven.png" alt="" class="companys-img"></div>
+                    <div class="col-lg-3 col-md-3 col-6 wow slideInRight" data-wow-duration="0.5s"><img src="./img/company/twelv.png" alt="" class="companys-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="companys-block-one" >
+                        <button class="button" id="button_one">Показать все</button>
+                    </div>
+                    <div class="companys-block-two " id="button_two">
+                        <button class="button">Скрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section kof" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h5 class="kof-title">Коэффициенты ОСАГО</h5>
+                    <p class="kof-paragraph">В основе расчета ОСАГО лежит базовая ставка, которую устанавливает Центробанк России. C 5 сентября 2020 г. для легковых автомобилей физических лиц действует новая ставка —</p>
+                    <p class="kof-sename">от 2471 до 5436 ₽</p>
+                    <p class="kof-paragraph">Конкретный размер базовой ставки определяют страховые компании. Они анализируют статистику аварийности и решают, какую базовую ставку установить для данной территории.
+                        Так как ситуация на дорогах часто меняется, страховщики регулярно пересматривают размер базовой ставки.</p>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="kof-block">
+                        <img src="./img/kof/page.png" alt="" class="kof-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-one">
+            <div class="container">
+                <div class="header__body">
+                    <a href="./index.html"  class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                   
+                    <nav class="header__footer">
+                        <ul class="footer-ul">
+                            <li><a href="/index.html" class="footer-li"></a></li>
+                            <li><a href="./index.html" class="footer-li">Главная</a></li>
+                            <li><a href="javascript://0" onclick="slowScroll('#services')" class="footer-li">Калькулятор ЕОСАГО</a></li>
+                            <li><a href="javascript://0"  onclick="slowScroll('#about')" class="footer-li">Коэффициенты ОСАГО</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-blocking">
+                        <a href="tel:8(982)940-51-91" class="header__link footer__list footer-linked">8(982)940-51-91</a>
+                    <a href="tg://resolve?domain=@polisosagorf" class=" footer__list footer__list-two"><img src="./img/footer/telega.png" alt=""></a>
+                    <a href="https://wa.me/+79829405191" class=" footer__list footer__list-two"><img src="./img/footer/whatsup.png" alt=""></a> 
+                    <a href="viber://chat?number=79829405191" class=" footer__list footer__list-two"><img src="./img/footer/viber.png" alt=""></a> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="footer-two">
+            <div class="container">
+                <div class="footer-two-block">
+                    <a href="https://goryachenok.ru/" class="footer-two-link">site by Nikita Goryachev</a>
+                    <p class="footer-two-link">copyright 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 
     <script src="./js/jquery-3.0.0.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="./js/script.js"></script>
+    <script src="./js/scroll.js"></script>
 </body>
 </html>

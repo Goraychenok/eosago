@@ -5,3 +5,19 @@ jQuery(document).ready(function() {
         $('.header').addClass('active'); 
     });
 });
+
+$('#button_one').click(function(event){
+    $('.companys-two').addClass('block');
+    $('#button_two').addClass('block');
+    $('#button_one').addClass('none');
+
+});
+
+$('#button_two').click(function(event){
+    $('.companys-two').removeClass('block');
+    $('#button_two').removeClass('block');
+    $('#button_one').removeClass('none');
+});
+
+new WOW().init();
+

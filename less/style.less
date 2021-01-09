@@ -141,8 +141,10 @@ a:hover{
     border:none;
     border-radius: 0.5rem;
     transition: 0.5s;
+    text-decoration: none;
     &:hover{
         background-color: @gray;
+        color: @light;
     }
 }
 .section{
@@ -331,6 +333,129 @@ a:hover{
         margin-bottom: 3rem;
     }
 }
+.companys{
+    background-color: #FDFDFE;
+    padding: 8rem 0rem;
+    &-img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    &-block{
+        &-one{
+            text-align: center;
+        }
+        &-two{
+            text-align: center;
+            display: none;
+        }
+    }
+    &-two{
+        display: none;
+    }
+}
+.kof{
+    padding: 8rem 0rem;
+    background-color: #FDFDFE;
+    &-title{
+        .inter();
+        font-weight: 600;
+        color: @text;
+        font-size: 2.4rem;
+        margin-bottom: 6rem;
+    }
+    &-paragraph{
+        padding: 0;
+        .inter();
+        color: @gray;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+    }
+    &-sename{
+        color: #6EE06C;
+        .inter();
+        font-weight: 600;
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+    }
+    &-img{
+        width: 100%;
+    }
+}
+.footer{
+    &-one{
+        background-color: #444053;
+    }
+    &__list{
+        color: @light;
+        &:hover{
+            text-decoration: underline;
+            color: @light;
+        }
+        li{
+            color: @light;
+        }
+        &-two{
+            margin-right: 2rem;
+        }
+    }
+    &-blocking{
+        display: flex;
+        align-items: center;
+    }
+    &-linked{
+        margin-right: 2rem;
+    }
+    &-two{
+        background-color: #373444;
+        padding: 1rem;
+        &-block{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-link{
+            padding: 0;
+            margin: 0;
+            color: @light;
+            font-size: 1.4rem;
+            .inter();
+            font-weight: 500;
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+                color: @light;
+            }
+        }
+    }
+    &-ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    &-li{
+        list-style: none;
+        .inter();
+        color: @light;
+        text-decoration: none;
+        margin: 0 0 0 3rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+        padding: 0;
+        &:hover{
+            text-decoration: underline;
+            color: @light;
+        }
+    }
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
 @media(max-width: 1400px){
     .whatisit{
         padding: 0rem 0rem;
@@ -358,6 +483,9 @@ a:hover{
             color: @text;
             text-decoration: underline;
         }
+    }
+    .header__footer{
+        display: none;
     }
     .header__logo{
 		flex: 0 0 45px;
@@ -515,6 +643,30 @@ a:hover{
             margin-bottom: 2rem;
         }
     }
+    .companys{
+        padding: 4rem 0rem;
+        &-img{
+            margin-bottom: 1rem;
+        }
+    }
+    .kof{
+        padding: 4rem 0rem;
+        &-block{
+            padding-top: 20%;
+        }
+        &-title{
+            font-size: 1.6rem;
+            margin-bottom: 4.8rem;
+        }
+        &-paragraph{
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        &-sename{
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+    }
 }
 
 @media(max-width: 450px){
@@ -559,6 +711,21 @@ a:hover{
         &-block{
             margin-bottom: 2rem;
         }
+    }
+    .kof{
+        &-title{
+            text-align: center;
+        }
+    }
+    .footer-linked{
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    .footer__list-two{
+        margin-right: 1rem;
+        img{
+            width: 80%;
+        }    
     }
 }
 
